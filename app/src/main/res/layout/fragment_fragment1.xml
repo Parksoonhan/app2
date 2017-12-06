@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent" >
+
+<TextView
+    android:id="@+id/mainValue"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:text="MainValue : 0" />
+<TextView
+    android:id="@+id/backValue"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:text="backValue : 0" />
+<Button
+    android:id="@+id/increase"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="증가" />
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+            <TextView
+                android:text="닉네임"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <EditText
+                android:text="Guest"
+                android:id="@+id/connText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </EditText>
+            <Button
+                android:text=" 접속 "
+                android:id="@+id/connBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="connBtnClick">
+            </Button>
+            <Button
+                android:text=" 종료 "
+                android:id="@+id/closeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="connBtnClick">
+            </Button>
+        </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/text01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false" />
+        </LinearLayout>
+    </ScrollView>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="bottom">
+            <EditText
+                android:id="@+id/chatText"
+                android:text=""
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                >
+            </EditText>
+            <Button
+                android:text="보내기"
+                android:id="@+id/sendBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="connBtnClick">
+            </Button>
+        </LinearLayout>
+
+</LinearLayout>
